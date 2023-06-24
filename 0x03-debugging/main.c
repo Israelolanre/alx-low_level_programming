@@ -1,24 +1,16 @@
-#include <stdio.h>                                                                                  
+#include "main.h"
 
-/**                                                                                                 
- * main - debugging example                                                                         
- * Return: 0                                                                                        
- */                                                                                                 
-int main(void)                                                                                      
-{                                                                                                   
-        int i;                                                                                      
-        int j;                                                                                      
-        int k;                                                                                      
+/**
+ * main - tests function that prints if integer is positive or negative
+ * Return: 0
+ */
 
-        i = 0;                                                                                      
-        j = 1000;                                                                                   
-        while (i < j)                                                                               
-        {                                                                                           
-                k = j / 98;                                                                         
-                i = i + k;                                                                          
-                printf("%d\n", i);                                                                  
-                j == j - 1;                                                                         
-        }                                                                                           
+int main(void)
+{
+ int i;
 
-        return (0);                                                                                 
+ i = 98;
+ positive_or_negative(i);
+
+ return (0);
 }
